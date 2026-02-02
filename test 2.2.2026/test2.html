@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 2</title>
+</head>
+<body>
+    <script>
+        let total = 0;
+
+        for(let i = 1; i <= 50; i++){
+            if(i % 3 === 0 && i % 5 === 0){
+                console.log("FizzBuzz");
+                document.write(i + " là FizzBuzz<br>");
+            } else if (i % 3 === 0){
+                console.log("Fizz");
+                document.write(i +" là Fizz<br>");
+                total += i;
+            } else if (i % 5 === 0){
+                console.log("Buzz");
+                document.write(i + " là Buzz<br>");
+            } else {
+                console.log(i);
+            }
+        }
+
+        console.log("Tổng của tất cả các số Fizz là: " + total);
+        document.write("Tổng của tất cả các số Fizz là: " + total);
+    </script>
+</body>
+</html>

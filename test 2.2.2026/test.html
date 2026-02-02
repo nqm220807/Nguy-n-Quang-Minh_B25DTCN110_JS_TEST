@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câu 1</title>
+</head>
+<body>
+    <script>
+        let number = parseInt(prompt("Nhập một số nguyên: "));
+        
+        if (number % 2 === 0){
+            console.log("Số" + number + "là số chẵn");
+            document.write("<br>Số" + number + "là số chẵn");
+        } else {
+            console.log("Số" + number + "là số lẻ");
+            document.write("<br>Số" + number + "là số lẻ");
+        }
+
+        if (number > 0){
+            console.log("Số" + number + "là số dương");
+            document.write("<br>Số" + number + "là số dương");
+        } else if (number < 0){
+            console.log("Số" + number + "là số âm");
+            document.write("<br>Số" + number + "là số âm");
+        } else {
+            console.log("Số" + number + "bằng 0");
+            document.write("<br>Số" + number + "bằng 0");
+        }
+
+        if (number > 0){
+            for(let i = 0; i <= number; i++){
+                console.log(i);
+                document.write(i + "<br>");
+            }
+        } else {
+            console.log("Giá trị" + number + "không hợp lệ");
+            document.write("<br>Giá trị" + number + "không hợp lệ");
+        }
+
+    </script>
+</body>
+</html>
