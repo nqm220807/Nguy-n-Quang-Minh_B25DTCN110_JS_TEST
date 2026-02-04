@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let nameStudent = ["Quý", "Nam", "Lan", "Hùng", "Nam"];
+        let students = nameStudent.slice(); 
+        console.log(students);
+
+        let reversedStudents = students.reverse();
+        console.log(reversedStudents);
+
+        let checkName = students.includes("Lan");
+        console.log(checkName);
+        if (checkName) {
+            console.log("Tên Lan cí trong mảng");
+        } else {
+            console.log("Tên Lan không có trong mảng");
+        }
+
+        let indexName = students.indexOf("Nam");
+        console.log(indexName);
+        if (indexName !== -1) {
+            console.log(`Tên Nam tìm thấy trong mảng tại vị trí đầu tiên là: ${indexName}`);
+        }
+    </script>
+</body>
+</html>

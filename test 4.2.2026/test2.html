@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let prices = ["100", "200", "300", "400"];
+        let totalPrice = 0;
+        for ( let price of prices) {
+            console.log(price);
+        }
+
+        for ( let index in prices) {
+            console.log(`Vị trí ${index} là: ${prices[index]}`);
+        }
+
+        for( let i = 0; i < prices.length; i++) {
+            if(i % 2 === 0) {
+                totalPrice += parseInt(prices[i]);
+            }
+        }
+        console.log("Tổng giá trị là:", totalPrice);
+    </script>
+</body>
+</html>
