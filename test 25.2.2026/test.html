@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let orders = ["Đơn hàng A", "Đơn hàng B", "Đơn hàng C", "Đơn hàng D", "Đơn hàng E"];
+
+        let revenues = [1500, 2800, 1200, -500, 3200];
+
+        let ordersReports = orders.map((order, index) => `${order} mang về ${revenues[index]} USD`);  
+        console.log(ordersReports);
+
+        let check = revenues.filter(value => value > 0);
+        let totalMoney = check.reduce((acc,value)=> {
+            acc += value;
+            return acc;
+        },0);
+        console.log(`Tổng doanh thu là: ${totalMoney}`);
+    </script>
+</body>
+</html>
